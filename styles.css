@@ -1,0 +1,172 @@
+body {
+  font-family: 'Rubik', sans-serif;
+  /* margin: 0;
+  padding: 0; */
+
+  background-color: #d8f3dc;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+  text-align: center;
+  display: inline-block;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 5px;
+  /* margin-left: 570px;
+  margin-right: 350px; */
+}
+
+.navigation > ul > li {
+  list-style: none;
+  display: inline;
+  /* remove display inline for mobile , so the menu stacks  */
+  padding-right: 50px;
+}
+
+h1 {
+  color: #f4ce14;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+ul > li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+li a:hover {
+  background-color: #04aa6d;
+}
+
+.card_link:visited {
+  color: purple;
+}
+.card_link:hover {
+  color: #04aa6d;
+}
+
+.banner {
+  background-image: url('images/katie-smith-uQs1802D0CQ-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  width: 100%;
+  padding-bottom: 50px;
+  /* border-radius: 5px;
+  margin-left: 380px; */
+}
+
+.card-container {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /*allows card to wrap on to the next line on a smaller screen */
+  width: 100%;
+  padding: 20px;
+}
+
+.cards {
+  border: 1px solid #04aa6d;
+  border-radius: 8px;
+  padding-left: 20px;
+  height: 400px;
+  width: 400px;
+  margin: 0 10px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.card_img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+
+  transform: rotateY(150deg);
+  transition: transform 5s ease;
+}
+
+.cards:hover .card_img {
+  transform: scale(1);
+}
+
+.bullet {
+  list-style-type: none;
+}
+
+.footer-container {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer img {
+  max-width: 150px;
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+  .logo {
+    max-width: 200px;
+  }
+  .navigation {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navigation > ul {
+    flex-direction: column;
+  }
+  .logo {
+    max-width: 80%; /* Reduce logo size on smaller screens */
+  }
+  .banner {
+    margin-bottom: 20px;
+  }
+
+  .card-container {
+    padding: 10px;
+  }
+
+  .cards {
+    width: 100%; /* Make cards full-width on smaller screens */
+    margin: 0 0 20px;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+}
+
+/* Media Queries for Mobile Responsiveness */
+/* @media screen and (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  footer img {
+    max-width: 100px;
+  }
+
+  .cards {
+    width: 90%;
+  }
+}  */
